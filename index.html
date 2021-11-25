@@ -22,18 +22,35 @@
       </div>
       <nav class="navbar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#home">Home <i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="#about">About <i class="fas fa-user-alt"></i></a>
+          </li>
+          <li>
+            <a href="#education"
+              >Education <i class="fas fa-user-graduate"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#portfolio"
+              >Experiences <i class="fas fa-project-diagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#contact">Contact <i class="fas fa-id-card-alt"></i></a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <div id="menu" class="fas fa-bars"></div>
     <section class="home" id="home">
-      <h3>Welcome to My Portfolio</h3>
+      <marquee width="50%" direction="left" height="50px">
+        Welcome to My Portfolio...
+      </marquee>
+      <!-- <h3>Welcome to My Portfolio</h3> -->
       <h1>I'm <span>Abdur Rouf Likhon</span></h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
@@ -41,7 +58,8 @@
         reprehenderit
       </p>
       <a href="#about"
-        ><button class="btn">Hire Me <i class="fas fa-handshake"></i></button
+        ><button class="btn-grad">
+          Hire Me <i class="fas fa-handshake"></i></button
       ></a>
     </section>
 
@@ -55,7 +73,7 @@
           <h3><span>Qualification:</span>B.Sc</h3>
           <h3><span>Language:</span>Bengali & English</h3>
           <a href="#"
-            ><button class="btn">
+            ><button class="btn-grad">
               Download CV <i class="fas fa-download"></i></button
           ></a>
         </div>
@@ -105,6 +123,28 @@
             ex?
           </p>
         </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2016</span>
+          <h3>Secondary School Certificate(SSC)</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde
+            vitae eum. Dolore, atque sunt? Fuga modi fugit voluptates facere,
+            odio doloremque minima earum vero laborum deleniti possimus, soluta
+            ex?
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2016</span>
+          <h3>Secondary School Certificate(SSC)</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde
+            vitae eum. Dolore, atque sunt? Fuga modi fugit voluptates facere,
+            odio doloremque minima earum vero laborum deleniti possimus, soluta
+            ex?
+          </p>
+        </div>
 
         <div class="box">
           <i class="fas fa-graduation-cap"></i>
@@ -133,13 +173,18 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-      <h1 class="heading"><span>Portfolio</span></h1>
+      <h1 class="heading"><span>My Latest Work</span></h1>
       <div class="box-container">
         <div class="box">
-          <img src="images/me.jpg" alt="" />
+          <img src="images/panda.png" alt="" />
+          <a href="https://likhon29.github.io/panda-commerce/"
+            >panda-commerce</a
+          >
         </div>
         <div class="box">
-          <img src="images/me.jpg" alt="" />
+          <a href="https://likhon29.github.io/hot-gadget/">
+            <img src="images/hot-gadget.png" alt=""
+          /></a>
         </div>
         <div class="box">
           <img src="images/me.jpg" alt="" />
@@ -180,11 +225,32 @@
             class="box message"
             placeholder="message"
           ></textarea>
-          <button type="submit" class="btn">
+          <button type="submit" class="btn-grad">
             Send <i class="fas fa-paper-plane"></i>
           </button>
         </form>
       </div>
+      <footer>
+        <div class="container">
+          <h3>Let's talk! <span>mdabdurrouf.likhon@gmail.com</span></h3>
+          <button>Connect With</button> <br />
+          <a href="https://www.facebook.com/abdurrouf.likhon" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/rouf_likhon/?hl=en"
+            target="_blank"
+          >
+            <i class="fab fa-instagram-square"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/likhon29" target="_blank"
+            ><i class="fab fa-github-square"></i
+          ></a>
+        </div>
+        <p>© Abdur Rouf Likhon 2021, Own initiative.</p>
+      </footer>
     </section>
 
     <a href="#home">

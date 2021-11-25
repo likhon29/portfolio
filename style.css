@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 :root {
   --yellow: #f9ca24;
+  --white: white;
 }
 
 * {
@@ -14,7 +15,7 @@
   transform: all 0.2s linear;
 }
 *::selection {
-  background: var(--yellow);
+  background: var(--white);
   color: #333;
 }
 html {
@@ -28,42 +29,51 @@ html::-webkit-scrollbar-thumb {
   background: var(--yellow);
 }
 body {
-  background: #111;
+  background-image: linear-gradient(90deg, #a1c4fd 30%, #c2e9fb 70%);
   overflow-x: hidden;
-  padding-left: 35rem;
+  padding-left: 40rem;
 }
 header {
   position: fixed;
   top: 0;
   left: 0;
+
   z-index: 1000;
   height: 100%;
-  width: 35rem;
-  background: #1a1a1a;
+  width: 40rem;
+  background-color: transparent;
+  background: linear-gradient(90deg, rgba(26, 42, 86, 1), rgba(1, 22, 53, 0.2));
+  /* background-image: linear-gradient(
+    109.6deg,
+    rgba(45, 116, 213, 1) 40.2%,
+    rgba(121, 137, 212, 1) 59.8%
+  ); */
+  /* background: lightskyblue; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
   text-align: center;
+  border-right: 5px solid rgb(12, 84, 129);
 }
 
 header .user img {
-  height: 17rem;
-  width: 17rem;
+  height: 20rem;
+  width: 20rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 0.7rem solid var(--yellow);
+  border: 0.7rem solid var(--white);
 }
 
 header .user .name {
   font-size: 3.5rem;
-  color: #fff;
+  color: var(--yellow);
 }
 
 header .user .post {
   font-size: 2rem;
-  color: #eee;
+  color: black;
 }
 header .navbar {
   width: 100%;
@@ -76,18 +86,52 @@ header .navbar ul li a {
   display: block;
   padding: 1rem;
   margin: 1.5rem 0;
-  background: #333;
-  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+  color: whitesmoke;
   font-size: 2rem;
   border-radius: 5rem;
 }
 header .navbar ul li a:hover {
-  background: var(--yellow);
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 section {
   min-height: 100vh;
-  padding: 1rem;
 }
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
 .btn {
   padding: 0.7rem 3rem;
   background: #333;
@@ -108,12 +152,12 @@ section {
   text-align: center;
   margin: 0.6rem;
   font-size: 4rem;
-  padding: 1rem;
-  border-bottom: 0.1rem solid #fff4;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid black;
   color: #fff;
 }
 .heading span {
-  color: var(--yellow);
+  color: rgb(214, 0, 0);
 }
 #menu {
   position: fixed;
@@ -134,8 +178,8 @@ section {
   flex-flow: column;
   padding: 0 15rem;
 }
-.home h3 {
-  font-size: 2.5rem;
+.home marquee {
+  font-size: 3.5rem;
   color: #fff;
 }
 .home h1 {
@@ -144,7 +188,7 @@ section {
 }
 .home p {
   font-size: 1.5rem;
-  color: #eee;
+  color: black;
   padding: 1rem 0;
 }
 .home h1 span {
@@ -164,12 +208,12 @@ section {
 }
 .about .row .info h3 {
   font-size: 2rem;
-  color: var(--yellow);
+  color: black;
   padding: 1rem 0;
   font-weight: normal;
 }
 .about .row .info h3 span {
-  color: #eee;
+  color: var(--yellow);
   padding: 0 0.5rem;
 }
 .about .row .counter {
@@ -224,7 +268,7 @@ section {
 }
 .education .box-container .box p {
   font-size: 1.4rem;
-  color: #eee;
+  color: black;
   padding: 1rem 0;
 }
 .education .box-container .box i {
@@ -265,7 +309,18 @@ section {
 .portfolio .box-container .box:hover img {
   transform: scale(1.2);
 }
-
+.box{
+ 
+    position: relative;
+    text-align: center;
+    color: white;
+  
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 .contact .row {
   display: flex;
   align-items: center;
@@ -288,8 +343,8 @@ section {
 .contact .row form .box {
   padding: 1.5rem;
   margin: 1rem 0;
-  background: #3333;
-  color: #fff;
+  background: whitesmoke;
+  color: black;
   text-transform: none;
   font-size: 1.7rem;
   width: 100%;
@@ -312,7 +367,7 @@ section {
   display: flex;
   align-items: center;
   font-size: 2rem;
-  color: #eee;
+  color: #000;
   padding: 1rem 0;
   font-weight: normal;
 }
@@ -343,6 +398,35 @@ section {
   body {
     padding: 0;
   }
+}
+
+footer {
+  text-align: center;
+  margin: 0px;
+
+  height: 120px;
+  background-color: transparent;
+  background: linear-gradient(90deg, rgba(1, 22, 53, 0.2), rgba(26, 42, 86, 1));
+  padding: 0;
+  margin: 0;
+}
+footer h3,p {
+  font-size: 16px;
+}
+footer h3 span {
+  color: white;
+}
+footer .container button {
+  background-color: orangered;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 6px;
+  width: 30%;
+  color: white;
+}
+footer .container a {
+  font-size: 25px;
+  color: blue;
 }
 @media (max-width: 400px) {
   html {
