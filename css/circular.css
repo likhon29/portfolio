@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+container-skill {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+
+  -webkit-box-shadow: inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: -0.5px -0.5px 0px rgba(255, 255, 255, 1);
+  -ms-box-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 12px 10px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .box-container .box .container {
+  position: relative;
+  text-align: center;
+
+  font-size: 25px;
+  height: 300px;
+}
+.portfolio .box-container .box .container img {
+  opacity: 0.5;
+}
+
+.portfolio .box-container .box .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(10, 3, 53);
+  font-size: 25px;
+  font-weight: 800;
+  
+}
+.skill_bar {
+  height: 160px;
+  width: 160px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  flex-grow: 1;
+}
+.outer_circle {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+.inner_circle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.2),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#value {
+  font-weight: 600;
+  color: #555;
+  font-size: 20px;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+circle {
+  fill: none;
+  stroke-width: 20px;
+  stroke: url('#linear');
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: animate 2s linear forwards;
+}
+@keyframes animate {
+  100% {
+    stroke-dashoffset: 225;
+  }
+}
+
+.txt {
+  text-align: center;
+  font-size: 30px;
+  color: tomato;
+  /* margin: 25px 0px; */
+  padding: 25px;
+  margin-left: -25px;
+  font-weight: 400;
+}
+.con {
+  width: 100%;
+}
+.parent {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
